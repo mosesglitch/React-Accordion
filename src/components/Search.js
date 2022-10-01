@@ -17,14 +17,18 @@ const Search = () => {
       });
       setResults(data.query.search);
     };
-    const timeOutId = setTimeout(() => {
-      if (term) {
-        search();
-      }
-    }, 500);
-    return () => {
-      clearTimeout(timeOutId);
-    };
+    if (term && !results.length) {
+      search();
+    } else {
+      const timeOutId = setTimeout(() => {
+        if (term) {
+          search();
+        }
+      }, 500);
+      return () => {
+        clearTimeout(timeOutId);
+      };
+    }
   }, [term]);
   // };
   // searchWiki();
