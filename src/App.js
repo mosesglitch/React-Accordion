@@ -1,6 +1,7 @@
 import React from "react";
+import Dropdown from "./components/Dropdown";
 // import Accordion from "./components/Accordion";
-import Search from "./components/Search";
+// import Search from "./components/Search";
 const items = [
   {
     title: "What is react?",
@@ -15,7 +16,7 @@ const items = [
 const App = () => {
   return (
     <div>
-      <Search />
+      <Dropdown />
     </div>
   );
 };
