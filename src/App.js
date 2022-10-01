@@ -1,7 +1,7 @@
 import React from "react";
 import Accordion from "./components/Accordion";
 
-const tems = [
+const items = [
   {
     title: "What is react?",
     content: "React is a component based js framework",
@@ -15,7 +15,7 @@ const tems = [
 const App = () => {
   return (
     <div>
-      <Accordion />
+      <Accordion items={items} />
     </div>
   );
 };
