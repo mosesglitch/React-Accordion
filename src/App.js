@@ -29,24 +29,30 @@ const options = [
   },
 ];
 const App = () => {
-  <div>
-    <Translate />;
-  </div>;
-  // const [selected, setSelected] = useState(options[0]);
-  // const [showDropdown, setShowDropdown] = useState(true);
-  // return (
-  //   <div>
-  //     <button onClick={() => setShowDropdown(!showDropdown)}>
-  //       Toggle Dropdown
-  //     </button>
-  //     {showDropdown ? (
-  //       <Dropdown
-  //         options={options}
-  //         onSelectedChange={setSelected}
-  //         selected={selected}
-  //       />
-  //     ) : null}
-  //   </div>
-  // );
+  return (
+    <div>
+      <Translate />
+      {console.log("why")}
+    </div>
+  );
 };
 export default App;
+
+// const [selected, setSelected] = useState(options[0]);
+// const [showDropdown, setShowDropdown] = useState(true);
+// return (
+//   <div>
+//     <button onClick={() => setShowDropdown(!showDropdown)}>
+//       Toggle Dropdown
+//     </button>
+//     {showDropdown ? (
+//       <Dropdown
+//         options={options}
+//         onSelectedChange={setSelected}
+//         selected={selected}
+//       />
+//     ) : null}
+//   </div>
+// );
+// };
+// export default App;
